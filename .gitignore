@@ -4,3 +4,11 @@
 .project
 .settings/
 .classpath
+
+# Build files
+target/
+*.class
+
+# Intellij Files #
+.idea
+*.iml
