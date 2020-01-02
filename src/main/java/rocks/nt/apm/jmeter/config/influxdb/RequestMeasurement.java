@@ -2,65 +2,46 @@ package rocks.nt.apm.jmeter.config.influxdb;
 
 /**
  * Constants (Tag, Field, Measurement) names for the requests measurement.
- * 
- * @author Alexander Wert
  *
+ * @author Alexander Wert
  */
 public interface RequestMeasurement {
 
-	/**
-	 * Measurement name.
-	 */
-	String MEASUREMENT_NAME = "requestsRaw";
+  /** Measurement name. */
+  String MEASUREMENT_NAME = "requestsRaw";
 
-	/**
-	 * Tags.
-	 * 
-	 * @author Alexander Wert
-	 *
-	 */
-	public interface Tags {
-		/**
-		 * Request name tag.
-		 */
-		String REQUEST_NAME = "requestName";
+  /**
+   * Tags.
+   *
+   * @author Alexander Wert
+   */
+  public interface Tags {
+    /** Request name tag. */
+    String REQUEST_NAME = "requestName";
 
-                /** 
-                 * Influx DB tag for a unique identifier for each execution(aka 'run') of a load test.
-                 */  
-                String RUN_ID = "runId";
+    /** Influx DB tag for a unique identifier for each execution(aka 'run') of a load test. */
+    String RUN_ID = "runId";
 
-                /** 
-                 * Test name field
-                 */  
-                String TEST_NAME = "testName";
-	}
+    /** Test name field */
+    String TEST_NAME = "testName";
+  }
 
-	/**
-	 * Fields.
-	 * 
-	 * @author Alexander Wert
-	 *
-	 */
-	public interface Fields {
-		/**
-		 * Response time field.
-		 */
-		String RESPONSE_TIME = "responseTime";
+  /**
+   * Fields.
+   *
+   * @author Alexander Wert
+   */
+  public interface Fields {
+    /** Response time field. */
+    String RESPONSE_TIME = "responseTime";
 
-		/**
-		 * Error count field.
-		 */
-		String ERROR_COUNT = "errorCount";
+    /** Error count field. */
+    String ERROR_COUNT = "errorCount";
 
-		/**
-		 * Thread name field
-		 */
-		String THREAD_NAME = "threadName";
+    /** Thread name field */
+    String THREAD_NAME = "threadName";
 
-		/**
-		 * Node name field
-		 */
-		String NODE_NAME = "nodeName";
-	}
+    /** Node name field */
+    String NODE_NAME = "nodeName";
+  }
 }
